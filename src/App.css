@@ -1,38 +1,79 @@
+body {
+    background-color: black;
+    overflow: hidden;
+}
+.alkio {
+    --ruutu: calc(1em);
+    width: var(--ruutu);
+    height: var(--ruutu);
+    line-height: var(--ruutu);
+    color: white;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+}
+td {
+    border: 0.1em solid rgb(53, 53, 53);
+}
+
+.tummempi {
+    background-color: #f5f5f5;
+}
+.risti {
+    background-color: #3856ff;
+}
+.nolla {
+    background-color: #ff0000;
+}
+tr:hover {
+    background-color: #838383;
+}
+td:hover {
+    background-color: #505050;
+}
+
 .App {
-  text-align: center;
+    margin: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pisteet {
+    order: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pelaajaX {
+    color: white;
+    text-align: center;
+    font-size: 150%;
+    margin: 1em;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.pelaajaO {
+    color: white;
+    text-align: center;
+    font-size: 150%;
+    margin: 1em;
 }
-
-.App-link {
-  color: #61dafb;
+.ruudukko {
+    order: 1;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.napit {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+}
+.nappi {
+    color: black;
+    margin: 2em;
+    width: 5em;
+    height: 4em;
+}
+.voitto {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+.ohje {
+    color: rgb(156, 156, 156);
+    margin: 5px;
 }
